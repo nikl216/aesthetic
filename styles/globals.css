@@ -1,4 +1,4 @@
-html,
+/* html,
 body {
   padding: 0;
   margin: 0;
@@ -10,7 +10,14 @@ a {
   color: inherit;
   text-decoration: none;
 }
-
+*/
 * {
   box-sizing: border-box;
 }
+.menu {
+  color: black;
+}
+.menu:hover {
+  color: grey;
+}
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;500;600;700&display=swap");
