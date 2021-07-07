@@ -21,17 +21,28 @@ module.exports = {
         "screen/1.5": "calc(100vh/1.5)",
       },
       animation: {
-        menu: "menu 1s ease-in",
+        menu: "menu 0.5s ease-in",
+        reverse: "reverse 1s ease-in",
       },
       keyframes: {
         menu: {
           "0%": {
-            // top: "-100%",
+            top: "-100%",
             opacity: 0,
           },
           "100%": {
-            // top: "0%",
+            top: "0%",
             opacity: 1,
+          },
+          reverse: {
+            "0%": {
+              top: "0%",
+              opacity: 0,
+            },
+            "100%": {
+              top: "-100%",
+              opacity: 1,
+            },
           },
         },
       },

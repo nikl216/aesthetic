@@ -1,7 +1,7 @@
 import { FiMenu } from "react-icons/fi";
 import { Sidebar } from "./sidebar";
 
-export default function Navbar({ click, setClick }) {
+export default function Navbar({ setClick }) {
   return (
     <div className="flex flex-row py-10 md:mx-20 mx-10 justify-between items-center">
       <div className="text-2xl font-black">Work.</div>
@@ -20,8 +20,10 @@ export default function Navbar({ click, setClick }) {
         </div>
       </div>
       <div className="md:flex md:flex-row md:justify-between md:items-center hidden">
-        <div className="text-md px-7 font-medium">Sign in</div>
-        <div className="text-md px-7 font-medium border-2 border-gray-100 rounded py-1">
+        <div className="text-md px-7 font-medium hover:text-gray-400 transition duration-500">
+          Sign in
+        </div>
+        <div className="text-md px-7 font-medium border-2 border-gray-100 rounded py-1 transition duration-500 ease-in-out hover:border-gray-500 ">
           Sign Up
         </div>
       </div>
@@ -29,8 +31,7 @@ export default function Navbar({ click, setClick }) {
         <FiMenu
           size={"1.5em"}
           onClick={() => {
-            setClick(!click);
-            console.log(click);
+            setClick((click) => !click);
           }}
         />
       </div>
